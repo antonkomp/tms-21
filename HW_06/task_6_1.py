@@ -23,3 +23,12 @@ max_elem = max_el(matrix)
 print('max element:', max_elem)
 print()
 
+
+# 3 task
+def min_el(matrix):
+    return min(map(min, matrix))
+
+
+min_elem = min_el(matrix)
+print('min element:', min_elem)
+print()
