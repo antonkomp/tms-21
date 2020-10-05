@@ -32,3 +32,11 @@ def min_el(matrix):
 min_elem = min_el(matrix)
 print('min element:', min_elem)
 print()
+
+# 4 task
+sum = 0
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        sum += matrix[i][j]
+print('sum elements:', sum)
+print()
