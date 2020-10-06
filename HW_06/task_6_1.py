@@ -40,3 +40,17 @@ for i in range(matrix_row):
         sum += matrix[i][j]
 print('sum elements:', sum)
 print()
+
+# 5 task
+max_sum_row = 0
+var_sum = 0
+index = 0
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        var_sum += matrix[i][j]
+    if max_sum_row < var_sum:
+        max_sum_row = var_sum
+        index = i
+    var_sum = 0
+print(f'index max sum row: {index} ({max_sum_row})')
+
