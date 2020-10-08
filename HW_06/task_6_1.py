@@ -83,3 +83,12 @@ for i in range(matrix_row):
 min_sum_col = min(var_sum)
 index = var_sum.index(min_sum_col)
 print(f'index min sum col: {index} ({min_sum_col})')
+
+# 9 task
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        if i < j:
+            matrix[i][j] = 0
+        print("{:>3}".format(matrix[i][j]), end='')
+    print()
+print()
