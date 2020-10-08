@@ -63,3 +63,15 @@ max_sum_col = max(var_sum)
 index = var_sum.index(max_sum_col)
 print(f'index max sum col: {index} ({max_sum_col})')
 
+# 7 task
+var_sum = 0
+var_sum_arr = []
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        var_sum += matrix[i][j]
+    var_sum_arr.append(var_sum)
+    var_sum = 0
+min_sum_row = min(var_sum_arr)
+index = var_sum_arr.index(min_sum_row)
+print(f'index min sum row: {index} ({min_sum_row})')
+
