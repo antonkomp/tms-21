@@ -92,3 +92,12 @@ for i in range(matrix_row):
         print("{:>3}".format(matrix[i][j]), end='')
     print()
 print()
+
+# 10 task
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        if i > j:
+            matrix[i][j] = 0
+        print("{:>3}".format(matrix[i][j]), end='')
+    print()
+print()
