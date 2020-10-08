@@ -75,3 +75,11 @@ min_sum_row = min(var_sum_arr)
 index = var_sum_arr.index(min_sum_row)
 print(f'index min sum row: {index} ({min_sum_row})')
 
+# 8 task
+var_sum = [0 for x in range(matrix_col)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        var_sum[j] += matrix[i][j]
+min_sum_col = min(var_sum)
+index = var_sum.index(min_sum_col)
+print(f'index min sum col: {index} ({min_sum_col})')
