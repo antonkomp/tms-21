@@ -137,3 +137,14 @@ for i in range(matrix_row):
         print("{:>3}".format(matrix_sub[i][j]), end=' ')
     print()
 print()
+
+# 14 task
+print('Mult matrix_a on the number:')
+mult_number = int(input('Enter number: '))
+matrix_mult = [[0 for j in range(matrix_col)] for i in range(matrix_row)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        matrix_mult[i][j] = matrix_a[i][j] * mult_number
+        print("{:>3}".format(matrix_mult[i][j]), end=' ')
+    print()
+print()
