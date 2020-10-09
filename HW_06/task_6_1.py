@@ -117,3 +117,13 @@ for i in range(matrix_row):
         print(matrix_b[i][j], end=' ')
     print()
 print()
+
+# 12 task
+print('Sum matrix_a and matrix_b:')
+matrix_sum = [[0 for j in range(matrix_col)] for i in range(matrix_row)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        matrix_sum[i][j] = matrix_a[i][j] + matrix_b[i][j]
+        print("{:>3}".format(matrix_sum[i][j]), end=' ')
+    print()
+print()
