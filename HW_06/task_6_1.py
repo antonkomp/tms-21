@@ -101,3 +101,19 @@ for i in range(matrix_row):
         print("{:>3}".format(matrix[i][j]), end='')
     print()
 print()
+
+# 11 task
+print('New 2 matrix:')
+matrix_a = [[random.randint(start_num, end_num) for j in range(matrix_col)] for i in range(matrix_row)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        print(matrix_a[i][j], end=' ')
+    print()
+print()
+
+matrix_b = [[random.randint(start_num, end_num) for j in range(matrix_col)] for i in range(matrix_row)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        print(matrix_b[i][j], end=' ')
+    print()
+print()
