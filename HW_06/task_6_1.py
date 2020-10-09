@@ -127,3 +127,13 @@ for i in range(matrix_row):
         print("{:>3}".format(matrix_sum[i][j]), end=' ')
     print()
 print()
+
+# 13 task
+print('Sub matrix_a and matrix_b:')
+matrix_sub = [[0 for j in range(matrix_col)] for i in range(matrix_row)]
+for i in range(matrix_row):
+    for j in range(matrix_col):
+        matrix_sub[i][j] = matrix_a[i][j] - matrix_b[i][j]
+        print("{:>3}".format(matrix_sub[i][j]), end=' ')
+    print()
+print()
